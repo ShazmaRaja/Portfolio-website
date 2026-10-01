@@ -53,3 +53,51 @@ img {
     line-height: 1.6;
     font-family: sans-serif;
 }
+
+@media (max-width: 1024px) {    /* Tablet and mobile */
+  .about {
+    height: auto;
+    padding: 20px 15px 40px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    align-items: start;
+    overflow: visible;
+  }
+  .top-text,
+  .text {
+    position: static;
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    grid-column: 1 / -1;
+  }
+  .top-text {
+    padding: 12px 30px;
+    justify-self: start;
+  }
+  .text {
+    padding: 24px 20px;
+    font-size: 18px;
+  }
+  img.cat,
+  img.me,
+  img.flowers {
+    position: static;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+  }
+}
+@media (max-width: 600px) {     /* Mobile */
+  .about {
+    gap: 8px;
+    padding: 15px 10px 30px;
+  }
+  .text {
+    font-size: 16px;
+    padding: 18px 16px;
+  }
+}

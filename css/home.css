@@ -70,3 +70,34 @@ body {
     font-size: 1.2rem;
     font-family: 'AcmeFont', sans-serif;
 }
+@media (max-width: 1024px) {   /* for tablet*/
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+    grid-auto-rows: 240px;
+    height: auto;
+  }
+  .gallery > div {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .text {
+    top: 50%;
+    width: 70%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 600px) {  /* Mobile */
+  .gallery {
+    grid-auto-rows: 160px;
+    width: 98%;
+  }
+  .text {
+    width: 85%;
+    padding: 8px 14px;
+  }
+  .text p {
+    font-size: 1rem;
+  }
+}

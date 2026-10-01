@@ -54,3 +54,30 @@ main {
     border-radius: 12px;
     
 }
+@media (max-width: 1024px) { /*for tablet */
+  .work {
+    height: auto;
+    min-height: 630px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 140px 20px 40px;
+  }
+  .card {
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {  /* Mobile */
+  .gallery {
+    grid-auto-rows: 160px;
+    width: 98%;
+  }
+  .text {
+    width: 85%;
+    padding: 8px 14px;
+  }
+  .text p {
+    font-size: 1rem;
+  }
+}
