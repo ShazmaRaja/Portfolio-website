@@ -1,6 +1,10 @@
 *{
     margin:0;
-    padding: 3px;
+    padding: 2px;
+}
+@font-face {
+    font-family: 'AcmeFont';
+    src: url('../Acme-Regular.ttf');
 }
 body {
     background-color: rgb(213, 219, 221);
@@ -10,12 +14,14 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(171, 197, 219);
+    font-family: 'AcmeFont', sans-serif;
+
 }
 nav {
     display: flex;
     gap: 20px;
     font-size: 1.8rem;
-    font-family: sans-serif;
+    font-family: 'AcmeFont', sans-serif;
 }
 nav a {
     color: rgb(7, 7, 7);

@@ -1,0 +1,55 @@
+.about {
+    background-image: url("../imgs/trip.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 580px;
+    margin: 5px;
+    padding-bottom: 80px;
+    overflow: hidden;
+    position: relative;
+}
+
+.top-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(171, 197, 219, 0.6);
+    padding: 15px 50px;
+    font-family:'AcmeFont', sans-serif;
+}
+
+img {
+    position: absolute;
+    height: 350px;
+    width: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba (0,0,0,0,0.3);
+}
+.cat {
+    top: 180px;
+    left: 40px;
+    height: 300px;
+}
+.me {
+    top: 190px;
+    left: 200px;
+    height: 320px;
+}
+.flowers {
+    top: 200px;
+    left: 360px;
+    height: 340px;
+    opacity: 0.9;
+}
+
+.text {
+    position: absolute;
+    top: 280px;
+    right: 100px;
+    width: 650px;
+    background-color: rgb(171, 197, 219, 0.7);
+    padding: 50px 40px;
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: sans-serif;
+}
