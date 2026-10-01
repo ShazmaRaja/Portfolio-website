@@ -1,14 +1,55 @@
 body {
     background-color: rgb(213, 219, 221);
+    margin: 0;
+    padding: 0;
 }
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-
+    grid-template-rows: repeat(10, 1fr);
+    margin-inline: auto;
+    width: 95%;
+    height: 92vh;
+    margin: 0 auto 20px auto;
+    gap: 1%;
+    padding: 0; 
+    box-sizing: border-box;
 }
 .gallery img {
     width: 100%;
-    height: auto; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
+}
+.img1 {
+    grid-column: 1;
+    grid-row: 1 / 5;
+}
+.img2 {
+    grid-column: 1;
+    grid-row: 5 / 11;
+}
+.img3 {
+    grid-column: 2;
+    grid-row: 1 / 7;
+}
+.img4 {
+    grid-column: 2;
+    grid-row: 7 / 11;
+}
+.img5 {
+    grid-column: 3;
+    grid-row: 1 / 7;
+}
+.img6 {
+    grid-column: 3;
+    grid-row: 7 / 11;
+}
+.img7 {
+    grid-column:4;
+    grid-row:1 / 6;
+}
+.img8 {
+    grid-column: 4;
+    grid-row: 6 / 11;
 }
